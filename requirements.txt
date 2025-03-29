@@ -5,3 +5,5 @@ torch
 numpy
 celery
 redis
+ultralytics
+matplotlib
