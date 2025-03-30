@@ -58,8 +58,11 @@ def send_and_poll():
 
 def main():
     result_list = []
-    with ThreadPoolExecutor(max_workers=3) as executor:
-        futures = [executor.submit(send_and_poll) for _ in range(3)]
+    
+    concurrent_batches = 10
+    
+    with ThreadPoolExecutor(max_workers=concurrent_batches) as executor:
+        futures = [executor.submit(send_and_poll) for _ in range(concurrent_batches)]
         for future in as_completed(futures):
             result = future.result()
             if result:
