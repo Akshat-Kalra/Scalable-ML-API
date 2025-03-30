@@ -1,3 +1,4 @@
+import uuid
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.responses import JSONResponse
 import os
@@ -77,13 +78,14 @@ async def upload_images_celery(files: List[UploadFile] = File(...)):
     
     try:
         for file in files:
-            temp_path = os.path.join(temp_dir, file.filename)
+            unique_filename = f"{uuid.uuid4()}_{file.filename}"
+            temp_path = os.path.join(temp_dir, unique_filename)
             with open(temp_path, "wb") as buffer:
                 shutil.copyfileobj(file.file, buffer)
             
             
             task = process_image_task.delay(temp_path)
-            task_ids.append({"filename": file.filename, "task_id": task.id})
+            task_ids.append({"filename": unique_filename, "task_id": task.id})
             
         
         return JSONResponse(content={"tasks": task_ids})
