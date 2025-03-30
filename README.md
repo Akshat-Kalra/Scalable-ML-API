@@ -2,7 +2,8 @@
 # By Akshat Kalra
 
 ## Report Submission
-https://economic-dash-19d.notion.site/zepp-health-assignment-report-akshat-ubc?pvs=4
+Please refer to my report here:  
+[Zepp Health Assignment Report Submission](https://economic-dash-19d.notion.site/zepp-health-assignment-report-akshat-ubc?pvs=4)
 
 ## Setup Instructions
 
@@ -76,3 +77,23 @@ From another terminal session run:
 cd client
 python client.py
 ```
+
+## Additional Information
+
+- **Horizontal Scaling :**
+    
+    In the `scaling` branch, I have started implementing a Docker Compose setup to run multiple FastAPI instances and Celery workers, with Nginx as a load balancer.
+        
+- **Rationale:**
+    
+    In the report, I detailed my approach, including why FastAPI was chosen over Flask, the use of Celery + Redis for asynchronous processing of CPU-intensive tasks, and my scalability strategy (both vertical and horizontal). I also discuss the challenges faced and potential improvements for a production system.
+
+## Troubleshooting
+
+- **Dependency Errors:**
+    
+    Verify that all dependencies in `requirements.txt` are installed and that the correct Python version is used.
+
+    Make sure to `source venv/bin/activate` whenever spinning up a new terminal session.
+
+- **Source**
