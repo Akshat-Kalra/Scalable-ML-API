@@ -1,6 +1,9 @@
 # Zepp Health Intern Home Assignment Submission
 # By Akshat Kalra
 
+## Submission Report
+https://economic-dash-19d.notion.site/zepp-health-assignment-report-akshat-ubc?pvs=4
+
 ## Setup Instructions
 
 ### 1. Clone the Repository
