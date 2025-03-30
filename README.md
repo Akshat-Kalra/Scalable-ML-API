@@ -88,6 +88,10 @@ python client.py
     
     In the report, I detailed my approach, including why FastAPI was chosen over Flask, the use of Celery + Redis for asynchronous processing of CPU-intensive tasks, and my scalability strategy (both vertical and horizontal). I also discuss the challenges faced and potential improvements for a production system.
 
+- **LLM usage**
+    I used an LLM to assist with outlining documentation, updating the client scripts and debugging purposes. The final solution reflects my own understanding. The LLM served as a helper and a tool to expedite development.
+
+
 ## Troubleshooting
 
 - **Dependency Errors:**
@@ -95,5 +99,3 @@ python client.py
     Verify that all dependencies in `requirements.txt` are installed and that the correct Python version is used.
 
     Make sure to `source venv/bin/activate` whenever spinning up a new terminal session.
-
-- **Source**
