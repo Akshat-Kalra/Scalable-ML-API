@@ -6,7 +6,7 @@ import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 API_URL = "http://localhost:8000/upload-image-celery"
-# 
+
 IMAGE_FOLDER = "test_images"
 
 def send_batch():
@@ -57,15 +57,23 @@ def send_and_poll():
     return elapsed_time, final_result
 
 def main():
+    result_list = []
     with ThreadPoolExecutor(max_workers=3) as executor:
-        futures = [executor.submit(send_and_poll) for _ in range(2)]
+        futures = [executor.submit(send_and_poll) for _ in range(3)]
         for future in as_completed(futures):
             result = future.result()
             if result:
                 elapsed_time, poll_result = result
-                print(f"Batch completed in {elapsed_time:.2f} seconds with result: {poll_result}")
+                result_list.append(elapsed_time)
+                print(f"Batch completed in {elapsed_time:.2f}")
             else:
                 print("No tasks received.")
-
+                
+    print("All batches completed")
+    print("Results:")
+    for i, result in enumerate(result_list, start=1):
+        print(f"Batch {i}")
+        print(result)
+    
 if __name__ == "__main__":
     main()
