@@ -1,7 +1,7 @@
 import requests
 import os
 
-API_URL = "http://localhost:8000/upload-image-batch"
+API_URL = "http://localhost:8000/upload-image-celery"
 # image_path = "Food.jpeg"
 IMAGE_FOLDER = "test_images"
 
