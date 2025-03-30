@@ -6,8 +6,8 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository_url>
-cd <repository_folder>
+git clone `https://github.com/Akshat-Kalra/Zepp-Health-Assignment.git`
+cd Zepp-Health-Assignment
 ```
 
 ### 2. Create and Activate a Virtual Environment
@@ -17,7 +17,7 @@ source venv/bin/activate
 ```
 
 ### 3. Install Python Dependencies
-```
+```bash
 pip install -r requirements.txt
 ```
 
