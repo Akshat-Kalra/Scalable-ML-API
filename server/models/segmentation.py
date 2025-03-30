@@ -12,6 +12,7 @@ def process_image(image_path):
     # running the model on the given image
     #  
     # sample output of the next line (just for self reference):
+    #
     # image 1/1 /content/Food.jpeg: 608x640 1 fork, 1 spoon, 2 broccolis, 1 pizza, 663.0ms
     # Speed: 25.7ms preprocess, 663.0ms inference, 91.2ms postprocess per image at shape (1, 3, 608, 640)
     # ultralytics.engine.results.Results object with attributes:
