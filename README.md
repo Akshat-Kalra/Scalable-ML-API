@@ -10,7 +10,7 @@ Please refer to my report here:
 
 ```bash
 git clone `https://github.com/Akshat-Kalra/Scalable-ML-API.git`
-cd Zepp-Health-Assignment
+cd Scalable-ML-API
 ```
 
 ### 2. Create and Activate a Virtual Environment
