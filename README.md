@@ -1,9 +1,6 @@
-# Zepp Health Intern Home Assignment Submission
-# By Akshat Kalra
-
 ## Report Submission
 Please refer to my report here:  
-[Zepp Health Assignment Report Submission](https://economic-dash-19d.notion.site/zepp-health-assignment-report-akshat-ubc?pvs=4)
+[Scalable ML API (Task Queue Distributed Service)](https://economic-dash-19d.notion.site/zepp-health-assignment-report-akshat-ubc?pvs=4)
 
 ## Setup Instructions
 
