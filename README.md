@@ -9,7 +9,7 @@ Please refer to my report here:
 ### 1. Clone the Repository
 
 ```bash
-git clone `https://github.com/Akshat-Kalra/Zepp-Health-Assignment.git`
+git clone `https://github.com/Akshat-Kalra/Scalable-ML-API.git`
 cd Zepp-Health-Assignment
 ```
 
